@@ -1,4 +1,4 @@
-BACKUP ~Margarita/backup~
+BACKUP ~weidu_external/Margarita/backup~
 AUTHOR ~Xavioria (rlbecker11@yahoo.com)~
 
 VERSION ~1.1~
@@ -7,13 +7,13 @@ ALWAYS
 
 	ACTION_IF GAME_IS ~bgt~ BEGIN
 		INCLUDE ~Margarita/Lib/g3_bgt_cpmvars.tpa~
-		PRINT ~Game is BGT~
+		PRINT @51 /* Game is BGT */
 	END ELSE ACTION_IF GAME_IS ~eet~ BEGIN
 		INCLUDE ~eet/other/cpmvars/eet_cpmvars.tpa~
-		PRINT ~Game is EET~
+		PRINT @52 /* Game is EET */
 	END ELSE ACTION_IF GAME_IS ~bg1 totsc bgee~ BEGIN
-		INCLUDE ~Margarita/Lib/g3_bgt_cpmvars.tpa~
-		PRINT ~Game is BG1~
+		INCLUDE ~Margarita/Lib/g3_bgee_cpmvars.tpa~
+		PRINT @53 /* Game is BG1 */
 	END
 
 
@@ -56,20 +56,20 @@ LANGUAGE
 		~English~
 		~Margarita/Languages/English/Setup.tra~
 
-BEGIN ~Margarita for Baldur's Gate: Enhanced Edition~
+BEGIN @54 /* Margarita for Baldur's Gate: Enhanced Edition */
 DESIGNATED 0
 LABEL ~Margarita-Xavioria~
-REQUIRE_PREDICATE GAME_IS ~bg1 totsc bgee eet bgt~ ~This mod need BG1, BGEE, BGT or EET~
+REQUIRE_PREDICATE GAME_IS ~bg1 totsc bgee eet bgt~ @55 /* This mod need BG1, BGEE, BGT or EET */
 
 // This adds Margarita herself to the game
 
 COPY ~Margarita/RL#MARG.cre~ ~Override/RL#MARG.cre~
-SAY NAME1 ~Margarita~
-SAY NAME2 ~Margarita~
+SAY NAME1 @56 /* Margarita */
+SAY NAME2 @56 /* Margarita */
 
 // Margarita's Biography
 
-SAY BIO ~When asked about her past, MARGARITA becomes defensive and fidgety. She mentions nameless people and countless places that seem to make her either older than she seems or somewhat loony. The Halfling does seem to mention one thing consistently, and that would be her trade as a courier. You find that after some more prodding, Margarita is constantly trying to shift the subject to something more neutral; implyng that something horrific may have happened in her past, or she's deliberately hiding something from you.~
+SAY BIO @57 /* When asked about her past, MARGARITA becomes defensive and fidgety. She mentions nameless people and countless places that seem to make her either older than she seems or somewhat loony. The Halfling does seem to mention one thing consistently, and that would be her trade as a courier. You find that after some more prodding, Margarita is constantly trying to shift the subject to something more neutral; implyng that something horrific may have happened in her past, or she's deliberately hiding something from you. */
 
 // Dialogue Scripts
 
@@ -111,8 +111,8 @@ ACTION_IF  GAME_IS ~eet~ BEGIN
 			// override_ToB = ""		// override script of your NPC (ToB) //name of the override NPC script in ToB (use SoA one if doesn't exist)
 			// dialog_ToB = ""		// joining dialogue for ToB//name of the dialogue file used after spawning NPC in ToB (use SoA POST dialogue or initial SoA dialogue file if doesn't exist)
 			cre_ToB = "RL#MARG"			//if type = 4 and/or default_ToB = 1 name of the ToB CRE file is needed (used to create new CRE rather than migrating existing one from SoA)
-//			traFile = EVAL "weidu_external/sbs/languages/autotra/%s/setup.tra"  //an optional TRA file that will be used for the TRA references defined in "string"
-			string = "~Bring me Margarita, the halfling stalker.~"					//FATESP summon text (example: "Bring me Quayle, the gnome cleric/illusionist.") or TRA string number
+			traFile = EVAL "weidu_external/Margarita/Languages/autotra/%s/Setup.tra"  //an optional TRA file that will be used for the TRA references defined in "string"
+			string = "@58"					//FATESP summon text (example: "Bring me Quayle, the gnome cleric/illusionist.") or TRA string number
 			stringPosDV = "Mazzy"			//set the DV of NPC right below your response (used for sorting FATESP responses alphabetically)
 											//Aerie, Ajantis, Alora, Anomen, Baeloth, Branwen, Cernd, Coran, Corwin, Dorn, Dynaheir, Edwin, Eldoth, Faldorn, Garrick,
 											//Glint, HaerDalis, Hexxat, Imoen2, Jaheira, Jan, Kagain, Keldorn, Khalid, Kivan, Korgan, MKhiin, Mazzy, Minsc, Montaron,
