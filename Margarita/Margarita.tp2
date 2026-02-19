@@ -28,7 +28,7 @@ ALWAYS
 //  ACTION_DEFINE_ARRAY RL#_noconvert BEGIN END
 
 		ACTION_DEFINE_ARRAY RL#_reload BEGIN Setup END
-
+		ACTION_DEFINE_ARRAY RL#_noconvert BEGIN install END
 			LAF HANDLE_CHARSETS
 				INT_VAR
 				infer_charsets = 1
@@ -36,7 +36,7 @@ ALWAYS
 				tra_path = EVAL ~weidu_external/Margarita/Languages/autotra~
 				out_path = EVAL ~weidu_external/Margarita/Languages/autotra/UTF8~
 				iconv_path = ~Margarita/Languages/autotra/iconv~
-				// noconvert_array = RL#_noconvert
+				noconvert_array = RL#_noconvert
 				reload_array = RL#_reload
 			END
 
@@ -55,7 +55,10 @@ LANGUAGE
 		~English~
 		~English~
 		~Margarita/Languages/English/Setup.tra~
-
+LANGUAGE 
+         ~Simplified Chinese~
+         ~schinese~
+         ~Margarita/Languages/SChinese/install.tra~
 BEGIN @54 /* Margarita for Baldur's Gate: Enhanced Edition */
 DESIGNATED 0
 LABEL ~Margarita-Xavioria~
