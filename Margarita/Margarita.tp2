@@ -25,10 +25,10 @@ ALWAYS
 	LAF autotra_workaround END
 
 	ACTION_IF GAME_IS ~bgee eet~ BEGIN
-//  ACTION_DEFINE_ARRAY RL#_noconvert BEGIN END
+
+			ACTION_DEFINE_ARRAY RL#_noconvert BEGIN install END
 
 		ACTION_DEFINE_ARRAY RL#_reload BEGIN Setup END
-		ACTION_DEFINE_ARRAY RL#_noconvert BEGIN install END
 			LAF HANDLE_CHARSETS
 				INT_VAR
 				infer_charsets = 1
@@ -56,9 +56,11 @@ LANGUAGE
 		~English~
 		~Margarita/Languages/English/Setup.tra~
 LANGUAGE 
-         ~Simplified Chinese~
-         ~schinese~
-         ~Margarita/Languages/SChinese/install.tra~
+		~Simplified Chinese~
+		~schinese~
+		~Margarita/Languages/SChinese/Setup.tra~
+		~Margarita/Languages/SChinese/install.tra~
+
 BEGIN @54 /* Margarita for Baldur's Gate: Enhanced Edition */
 DESIGNATED 0
 LABEL ~Margarita-Xavioria~
@@ -98,7 +100,7 @@ APPEND ~interdia.2da~
 /* ------------- *
  *  Fate Spirit  *
  * ------------- */
- 
+
 ACTION_IF  GAME_IS ~eet~ BEGIN
 	INCLUDE ~EET/other/EET_functions.tph~   // functions from EET mod
 	LAF ~EET_NPC_TRANSITION~

@@ -4,7 +4,7 @@
 [![Published](https://img.shields.io/github/release-date-pre/The-Gate-Project/Margarita?display_date=published_at&label=published&color=014a69)](https://github.com/The-Gate-Project/Margarita/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/The-Gate-Project/Margarita/total?color=41788a)](https://github.com/The-Gate-Project/Margarita/releases)
 
-[![Language](https://img.shields.io/badge/language-english-014a69)](https://github.com/The-Gate-Project/Margarita/releases)
+[![Language](https://img.shields.io/badge/language-english%20%a0%20schinese-014a69)](https://github.com/The-Gate-Project/Margarita/releases)
 [![Games](https://img.shields.io/badge/games-BG1%20%a0%20BGEE%20%a0%20BGT%20%a0%20EET-41788a)](https://github.com/The-Gate-Project/Margarita/releases)
 
 <!--
