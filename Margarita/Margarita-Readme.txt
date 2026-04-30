@@ -73,6 +73,7 @@ Version History:
 	Initial Release
 
 - January, 2026 - Version 1.1
+	Simplified Chinese by MephistoSatanDevil
 	Traification
 	EET compatibility
 	Label
