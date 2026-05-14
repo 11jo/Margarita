@@ -14,7 +14,7 @@
 [![Platform](https://img.shields.io/badge/platform-Windows%20%a0%20macOS%20%a0%20Linux%20%a0%20Project%20Infinity-014a69)](https://github.com/The-Gate-Project/Margarita/releases)
 -->
 
-**Author** : **Xavioria** (Rlbecker11@yahoo.com)
+**Author** : **Xavioria**
 
 [Link to original Mod Forum](https://forums.beamdog.com/discussion/15867/)
 
